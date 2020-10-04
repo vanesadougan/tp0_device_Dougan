@@ -3,7 +3,7 @@ $ sudo -E make
 
 Instalar modulo:
 
-$ sudo insmod char_dougan.ko 
+$ sudo insmod char_Dougan.ko 
 
 Verificar si se instalo con:
 
@@ -17,7 +17,7 @@ En los logs debe aparecer algo similar a esto:
 
 $ sudo rm /dev/DOUGAN
 $ sudo mknod /dev/DOUGAN c 240 0
-$ sudo chmod 666 /dev/UNGS
+$ sudo chmod 666 /dev/DOUGAN
 
 Ejecutarlos en ese orden, el numero major (240) va a variar, tener en cuenta el número major que se obtuvo en los logs.
 
@@ -38,4 +38,4 @@ $ cat /dev/DOUGAN
 
 Des-registrar modulo:
 
-$ sudo rmmod char_Dougan.ko
+$ sudo rmmod char_Dougan
